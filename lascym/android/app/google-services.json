@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "302973696730",
+    "project_id": "loginsignup-2578b",
+    "storage_bucket": "loginsignup-2578b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302973696730:android:80f0250c05ed9430a443e3",
+        "android_client_info": {
+          "package_name": "com.example.lascym"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPEFgPv4kGH7_k7VPdbes_0MKJxr-rmDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
