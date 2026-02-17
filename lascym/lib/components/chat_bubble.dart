@@ -1,4 +1,4 @@
-import 'package:chatting_app/provider/theme_provider.dart';
+import 'package:lascym/provider/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -14,15 +14,15 @@ class ChatBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDarkMode = Provider.of<ThemeProvider>(
-      context,
-      listen: false,
-    ).isDarkMode;
+    final bool isDarkMode = Provider.of<ThemeProvider>(context).isDarkMode;
 
     final screenWidth = MediaQuery.of(context).size.width;
 
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+      padding: const EdgeInsets.symmetric(
+        vertical: 4,
+        horizontal: 8,
+      ),
       child: Align(
         alignment: isCurrentUser ? Alignment.centerRight : Alignment.centerLeft,
         child: ConstrainedBox(
@@ -32,7 +32,7 @@ class ChatBubble extends StatelessWidget {
             decoration: BoxDecoration(
               color: isCurrentUser
                   ? Colors.green.shade600
-                  : Colors.grey.shade200,
+                  : (isDarkMode ? Colors.grey.shade800 : Colors.grey.shade200),
               borderRadius: BorderRadius.only(
                 topLeft: const Radius.circular(18),
                 topRight: const Radius.circular(18),
